@@ -1,0 +1,43 @@
+.navbar-navigation {
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-bottom: 0.5px solid #D0D1D2;
+	border-top: 3px solid #00acee;
+
+	.navbar-logo {
+		grid-column: 1 / 2;
+
+		img {
+			padding: 15px;
+		}
+	}
+
+	.navbar-items ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 1rem;
+		list-style-type:none;
+		padding: 10px;
+		padding-top: 3rem;
+		margin-bottom: 5px;
+
+		li {
+			font-size: 20px;
+			font-weight: 350;
+		}
+
+		a {
+			color: black;
+		}
+
+		a:link {
+			text-decoration: none;
+
+		}
+
+		a:hover {
+			color: #00acee;
+		}
+	}
+}
