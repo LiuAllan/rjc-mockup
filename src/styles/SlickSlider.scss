@@ -1,0 +1,88 @@
+$blue: #00acee;
+
+.slide-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	
+	.slick-slider{
+		height: 100%;
+		width: 100%;
+
+		.slick-dots {
+			background-color: rgba(#fff, 0.5);
+			width: 100%;
+			height: 15%;
+
+			button:before {
+				font-size: 10px;
+			}
+
+			li.slick-active button:before {
+				color: $blue;
+			}
+
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		z-index: -1;
+	}
+
+	@for $i from 1 to 7 {
+		.slide#{$i}-container {
+			padding-left: 4rem;
+		}
+
+		.box#{$i} {
+			position: absolute;
+			z-index: 1;
+			background-color: rgba(black, 0.6);
+			width: 300px;
+			height: auto;
+		}
+
+		.box#{$i}:hover {
+			background-color: rgba(black, 0.75);
+
+			h3 {
+				color: #fff;
+				transition: 0.25s;
+			}
+		}
+
+		.box#{$i}-info {
+			padding: 1rem;
+			text-align: left;
+			font-weight: 300;
+
+			.random-square {
+				width: 50px;
+				height: 8px;
+				background-color: $blue;
+			}
+
+			h1 {
+				color: #fff;
+				font-weight: 300;
+				line-height: 1;
+			}
+
+			h3 {
+				font-size: 1rem;
+				color: $blue;
+				text-transform: uppercase;
+			}
+
+			p {
+				color: #fff;
+			}
+		}
+	}
+}
+
+

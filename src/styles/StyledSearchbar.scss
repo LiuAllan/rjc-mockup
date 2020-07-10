@@ -1,5 +1,6 @@
 .sub-heading {
 	padding: 2.5px;
+	padding-left: 15px;
 	border-bottom: 0.5px solid #D0D1D2;
 	background: #fafafa;
 
@@ -11,6 +12,7 @@
 	input {
 	outline: none;
 	}
+
 	input[type=search] {
 		-webkit-appearance: textfield;
 		-webkit-box-sizing: content-box;
@@ -43,6 +45,7 @@
 		-moz-transition: all .5s;
 		transition: all .5s;
 	}
+
 	input[type=search]:focus {
 		width: 130px;
 		background-color: #fff;
