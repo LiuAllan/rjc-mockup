@@ -21,8 +21,8 @@ export default class SlickSlider extends React.Component {
 			speed: 800,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			autplay: true,
-			autoplaySpeed: 1000,
+			autoplay: true,
+			autoplaySpeed: 3000,
 			pauseOnHover: true,
 			
 		};
