@@ -1,11 +1,26 @@
 $blue: #00acee;
+$shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 
 .main-content-container {
 	width: 100%;
+	p {
+		line-height: 2;
+	}
+	h3 {
+		font-weight: 500;
+		font-size: 20px;
+		text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+		text-transform: uppercase;
+	}
+
+	img {
+		border-radius: 5px;
+		box-shadow: $shadow;
+	}
 
 	@for $i from 1 to 6 {
 		.content-block#{$i}-info-container {
-			padding: 5rem;
+			padding: 10rem;
 		}
 	}
 
@@ -24,46 +39,78 @@ $blue: #00acee;
 
 	.content-block2 {
 		background-color: #E6E6E6;
-		height: 75vh;
+		height: 100vh;
 		width: 100%;
 
 		.square {
-			background-color: red;
-			width: 100px;
-			height: 100px;
+			background-color: $blue;
+			width: 100%;
+			height: 90%;
 		}
 
-		h3 {
-			font-weight: 500;
-			font-size: 20px;
+		.img1 {
+			max-width: 400px;
+			height: auto;
+		}
 
+		.top {
+			grid-column: 3 / span 8;
+			grid-row: 1;
+			padding-top: 15%;
+			z-index: 1;
+		}
+
+		.bottom {
+			grid-column: 4 / -1;
+			grid-row: 1;
+		}
+
+
+		.img-stack {
+			display: grid;
+			grid-template-columns: repeat(10, 1fr);
+			position: relative;
 		}
 	}
 
 	.content-block3 {
-		height: 80vh;
-		background-color: pink;
+		height: 100%;
+		background-color: #fff;
+
+		img {
+			margin-top: 2rem;
+			height: auto;
+			max-width: 80%;
+			object-fit: cover;
+		}
 	}
 
 	.content-block4 {
-		height: 80vh;
-		background-color: green;
+		height: 100vh;
+		background-color: #E6E6E6;
+
+		img {
+			height: auto;
+			max-width: 90%;
+			object-fit: cover;
+		}
 	}
 
 	.content-block5 {
-		height: 80vh;
-		background-color: yellow;
+		height: 100vh;
+		background-color: #fff;
 	}
 
 }
 
-
-/*.parallax {
-	height: 100%;
-	background-image: url('../images/main/edm_031733_n309_medium-(1).jpg');
-
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
+[data-scroll] {
+  transition: all 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0)
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateY(200px)
+}
