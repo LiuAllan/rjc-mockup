@@ -3,11 +3,13 @@ import '../styles/StyledMainContent.scss';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import ScrollOut from 'scroll-out';
+// import 'animate.css';
 
 import img1 from '../images/main/tor_102910_n10_medium.jpg';
 import img2 from '../images/main/edm_031733_n309_medium-(1).jpg';
 import img3 from '../images/main/cal_100183_n33_medium-(1).jpg';
 import img4 from '../images/main/van_100174_n166_medium.jpg';
+import img5 from '../images/main/sustainable-design_overview-page.jpg';
 
 const style = {
 	border: '1px solid #00acee',
@@ -18,6 +20,9 @@ const style = {
 export default class MainContent extends React.Component {
 	componentDidMount() {
 		ScrollOut({
+			// onShown(el) {
+			//     el.classList.add("animated");
+			// },
 			once: true,
 			threshold: 0.4,
 		});
@@ -27,7 +32,7 @@ export default class MainContent extends React.Component {
 	render() {
 		return (
 			<div className="main-content-container">
-				<div className="content-block1">
+				<section className="content-block1">
 					<div className="content-block1-info-container">
 						<h1>Creative Thinking <b className="enhance">Practical Results</b></h1>
 						<p>For over seven decades, we have integrated innovative thinking, technical expertise and practicality to create success for our clients. RJC’s people are Canada’s pre-eminent engineers; we continually invest in our company to retain our status as a leader in our sector and we consistently mentor the next generation of Canada’s ‘best and brightest’ engineers.</p>
@@ -38,9 +43,9 @@ export default class MainContent extends React.Component {
 							Specializing in structural engineering services, building science, structural restoration, structural glass and façade engineering and parking facility design and restoration, RJC Engineers is one of North America's leading engineering firms. We provide highly personalized service at the local level with the expertise, depth and resources of a large, national firm with locations across Canada.
 						</p>
 					</div>
-				</div>
+				</section>
 
-				<div className="content-block2" data-scroll>
+				<section className="content-block2" data-scroll>
 					<div className="content-block2-info-container">
 
 						<Grid container spacing={8}>
@@ -62,9 +67,9 @@ export default class MainContent extends React.Component {
 							</Grid>
 						</Grid>
 					</div>
-				</div>
+				</section>
 
-				<div className="content-block3" data-scroll>
+				<section className="content-block3" data-scroll>
 					<div className="content-block3-info-container">
 						<Grid container space={8}>
 							<Grid item xs={12}>
@@ -87,13 +92,12 @@ export default class MainContent extends React.Component {
 
 						</Grid>
 					</div>
-				</div>
+				</section>
 
-				<div className="content-block4" data-scroll>
+				<section className="content-block4" data-scroll>
 					<div className="content-block4-info-container">
 					<Grid container space={8}>
 						<Grid item xs={6}>
-							{/*SET IMAGE TO PARALLAX*/}
 							<img src={img4} alt="" />
 							
 						</Grid>
@@ -105,15 +109,30 @@ export default class MainContent extends React.Component {
 						</Grid>
 					</Grid>
 					</div>
-				</div>
+				</section>
 
-				<div className="content-block5" data-scroll>
+				<div 
+					className="parallax"
+					style={{
+						'height': '50vh',
+						'width':'100%',
+						'backgroundImage': `url(${img5})`,
+						'backgroundAttachment':'fixed',
+						'backgroundPosition': 'center',
+						'backgroundRepeat':'no-repeat',
+						'backgroundSize':'cover',
+					}}
+
+					></div>
+
+				<section className="content-block5" data-scroll>
 					<div className="content-block5-info-container">
 						<h3>Leaders in Sustainability</h3>
 						<p>RJC is committed to delivering creative, practical solutions benefitting our clients, while also minimizing the economic, social and environmental impacts of the built environment. To establish RJC as an industry leader in this vital area, we have formed RJC’s Sustainable Design Group, which expands our knowledge of sustainable design and helps foster innovation in sustainable design practices. RJC is on a journey toward greener operations and as we migrate to a reduced environmental footprint, our staff has collaborated to create our Green Operations Plan; we have also established GreenTeams within each of our offices to pursue ways to bring our Green Operations Plan vision to life.</p>
 						<Button variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
 					</div>
-				</div>
+					
+				</section>
 			</div>
 		);
 	}
