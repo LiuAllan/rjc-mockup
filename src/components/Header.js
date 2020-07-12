@@ -2,10 +2,10 @@ import React from 'react';
 import { Navbar } from './Navbar';
 import { Searchbar } from './Searchbar';
 
-export const Header = () => {
+export const Header = ({drawerToggleClickHandler}) => {
 	return (
 		<>
-			<Navbar />
+			<Navbar toggle={drawerToggleClickHandler}/>
 			<Searchbar />
 		</>
 	);
