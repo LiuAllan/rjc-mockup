@@ -3,6 +3,7 @@ import '../styles/StyledMainContent.scss';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import ScrollOut from 'scroll-out';
+import { Link } from 'react-router-dom';
 // import 'animate.css';
 
 import img1 from '../images/main/tor_102910_n10_medium.jpg';
@@ -52,7 +53,10 @@ export default class MainContent extends React.Component {
 							<Grid item xs={6}>
 								<h3>Leaders in Structural Engineering</h3>
 								<p>City skylines across Canada are dominated by buildings bearing RJC’s signature. We have pioneered innovations to make structures more economical and buildable, developing many approaches which are now industry standards. We relentlessly pursue engineering excellence and extraordinary service with the goal of making our clients successful. Our engineers bring their creativity and individual expertise backed by the resources and collective knowledge of a large, specialized firm to every project.</p>
-								<Button variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
+
+								<Button component={ Link } to="/practice-areas/structural-engineering" variant="outlined" size="small" color="primary" style={style}>
+									Learn More
+								</Button>
 							</Grid>
 
 							<Grid item xs={6}>
@@ -75,7 +79,7 @@ export default class MainContent extends React.Component {
 							<Grid item xs={12}>
 								<h3>Leaders in Building Science</h3>
 								<p>Our knowledge base has developed over decades of helping our clients address building enclosure issues. We have the engineering expertise needed to look at building envelopes from the earliest conceptual stages of design and to come up with practical details that perform. Our holistic approach means we understand how building envelopes function and how they integrate with other building components throughout their lifespan.</p>
-								<Button variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
+								<Button component={ Link } to="/practice-areas/building-science" variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
 							</Grid>
 
 							<Grid item xs={6}>
@@ -105,7 +109,7 @@ export default class MainContent extends React.Component {
 						<Grid item xs={6}>
 							<h3>Leaders in Structural Restoration</h3>
 							<p>At RJC we understand how structures are built and function. We know how they deteriorate and fail, and how to most effectively maintain and repair them for lasting value. For decades, clients have trusted us to provide valuable advice and services on evaluating, maintaining and restoring their structures including heritage building restoration. Our engineering knowledge base equips our specialists with a high-level of reliable expertise.</p>
-							<Button variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
+							<Button component={ Link } to="/practice-areas/structural-restoration" variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
 						</Grid>
 					</Grid>
 					</div>
@@ -129,7 +133,7 @@ export default class MainContent extends React.Component {
 					<div className="content-block5-info-container">
 						<h3>Leaders in Sustainability</h3>
 						<p>RJC is committed to delivering creative, practical solutions benefitting our clients, while also minimizing the economic, social and environmental impacts of the built environment. To establish RJC as an industry leader in this vital area, we have formed RJC’s Sustainable Design Group, which expands our knowledge of sustainable design and helps foster innovation in sustainable design practices. RJC is on a journey toward greener operations and as we migrate to a reduced environmental footprint, our staff has collaborated to create our Green Operations Plan; we have also established GreenTeams within each of our offices to pursue ways to bring our Green Operations Plan vision to life.</p>
-						<Button variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
+						<Button component={ Link } to="/" variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
 					</div>
 					
 				</section>

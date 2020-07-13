@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/StyledPracticeArea.scss';
 import Item from './Item';
+import { Link } from 'react-router-dom';
 
 import img1 from '../images/practiceAreas/_structural-engineering_thumb.jpg'
 import img2 from '../images/practiceAreas/_building-science_thumb.jpg'
@@ -20,22 +21,34 @@ const PracticeAreaContent = () => (
 		<div className="item-list">
 			{/*Input square components*/}
 			<div className="grid-item">
-				<Item image={img1} text="Structural Engineering"/>
+				<Link to={{ pathname: "/practice-areas/structural-engineering"}}>
+					<Item image={img1} text="Structural Engineering"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img2} text="Building Science"/>
+				<Link to={{ pathname: "/practice-areas/building-science"}}>
+					<Item image={img2} text="Building Science"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img3} text="Structural Restoration"/>
+				<Link to={{ pathname: "/practice-areas/structural-restoration"}} >
+					<Item image={img3} text="Structural Restoration"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img4} text="Structural Glass Engineering"/>
+				<Link to={{ pathname: 'practice-areas/structural-glass-engineering'}}>
+					<Item image={img4} text="Structural Glass Engineering"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img5} text="Parking Facility Design"/>
+				<Link to={{ pathname: '/practice-areas/parking-facility-design'}}>
+					<Item image={img5} text="Parking Facility Design"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img6} text="Audits and Studies"/>
+				<Link to={{ pathname: '/practice-areas/audits-studies'}}>
+					<Item image={img6} text="Audits and Studies"/>
+				</Link>
 			</div>
 		</div>
 	</section>

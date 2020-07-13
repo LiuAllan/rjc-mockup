@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/SlickSlider.scss';
@@ -66,92 +67,104 @@ export default class SlickSlider extends React.Component {
 				<Slider {...settings}>
 					<div className="slide1">
 						<div className="slide1-container">
-							<div className="box1">
-								<div className="box1-info">
-									<div className="random-square"></div>
-									<h1>
-										{data.info1.h1}
-									</h1>
-									<h3>{data.info1.h3}</h3>
-									<p>{data.info1.p}</p>
+							<Link to={{pathname: "/practice-areas/structural-engineering"}}>
+								<div className="box1">
+									<div className="box1-info">
+										<div className="random-square"></div>
+										<h1>
+											{data.info1.h1}
+										</h1>
+										<h3>{data.info1.h3}</h3>
+										<p>{data.info1.p}</p>
+									</div>
 								</div>
-							</div>
+							</Link>
 						</div>
 						<img src={img1} alt="" />
 					</div>
 					<div className="slide2">
 						<div className="slide2-container">
-							<div className="box2">
-								<div className="box2-info">
-									<div className="random-square"></div>
-									<h1>
-										{data.info2.h1}
-									</h1>
-									<h3>{data.info2.h3}</h3>
-									<p>{data.info2.p}</p>
+							<Link to={{ pathname: "/practice-areas/building-science"}}>
+								<div className="box2">
+									<div className="box2-info">
+										<div className="random-square"></div>
+										<h1>
+											{data.info2.h1}
+										</h1>
+										<h3>{data.info2.h3}</h3>
+										<p>{data.info2.p}</p>
+									</div>
 								</div>
-							</div>
+							</Link>
 						</div>
 						<img src={img2} alt="" />
 					</div>
 					<div className="slide3">
 						<div className="slide3-container">
-							<div className="box3">
-								<div className="box3-info">
-									<div className="random-square"></div>
-									<h1>
-										{data.info3.h1}
-									</h1>
-									<h3>{data.info3.h3}</h3>
-									<p>{data.info3.p}</p>
+							<Link to={{ pathname: 'practice-areas/structural-glass-engineering'}}>
+								<div className="box3">
+									<div className="box3-info">
+										<div className="random-square"></div>
+										<h1>
+											{data.info3.h1}
+										</h1>
+										<h3>{data.info3.h3}</h3>
+										<p>{data.info3.p}</p>
+									</div>
 								</div>
-							</div>
+							</Link>
 						</div>
 						<img src={img3} alt="" />
 					</div>
 
 					<div className="slide4">
 						<div className="slide4-container">
-							<div className="box4">
-								<div className="box4-info">
-									<div className="random-square"></div>
-									<h1>
-										{data.info4.h1}
-									</h1>
-									<h3>{data.info4.h3}</h3>
-									<p>{data.info4.p}</p>
+							<Link to={{ pathname: 'practice-areas/structural-restoration'}}>
+								<div className="box4">
+									<div className="box4-info">
+										<div className="random-square"></div>
+										<h1>
+											{data.info4.h1}
+										</h1>
+										<h3>{data.info4.h3}</h3>
+										<p>{data.info4.p}</p>
+									</div>
 								</div>
-							</div>
+							</Link>
 						</div>
 						<img src={img4} alt="" />
 					</div>
 					<div className="slide5">
 						<div className="slide5-container">
-							<div className="box5">
-								<div className="box5-info">
-									<div className="random-square"></div>
-									<h1>
-										{data.info5.h1}
-									</h1>
-									<h3>{data.info5.h3}</h3>
-									<p>{data.info5.p}</p>
+							<Link to={{ pathname: 'practice-areas/audits-studies'}}>
+								<div className="box5">
+									<div className="box5-info">
+										<div className="random-square"></div>
+										<h1>
+											{data.info5.h1}
+										</h1>
+										<h3>{data.info5.h3}</h3>
+										<p>{data.info5.p}</p>
+									</div>
 								</div>
-							</div>
+							</Link>
 						</div>
 						<img src={img5} alt="" />
 					</div>
 					<div className="slide6">
 						<div className="slide6-container">
-							<div className="box6">
-								<div className="box6-info">
-									<div className="random-square"></div>
-									<h1>
-										{data.info6.h1}
-									</h1>
-									<h3>{data.info6.h3}</h3>
-									<p>{data.info6.p}</p>
+							<Link to={{ pathname: 'practice-areas/parking-facility-design'}}>
+								<div className="box6">
+									<div className="box6-info">
+										<div className="random-square"></div>
+										<h1>
+											{data.info6.h1}
+										</h1>
+										<h3>{data.info6.h3}</h3>
+										<p>{data.info6.p}</p>
+									</div>
 								</div>
-							</div>
+							</Link>
 						</div>
 						<img src={img6} alt="" />
 					</div>

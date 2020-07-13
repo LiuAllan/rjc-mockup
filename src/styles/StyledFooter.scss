@@ -29,5 +29,13 @@ $grey: #f1f3f4;
 
 	.copyrights {
 		line-height: 0.5;
+		p {
+			font-size: 14px;
+		}
+		
 	}
+}
+
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeLarge:hover {
+	color: #A6A5A5 !important;
 }

@@ -50,13 +50,13 @@ export class Navbar extends React.Component {
 							
 							{ this.state.displayMenu ? (
 								<ul className="dropdown-ul1" onMouseLeave={this.hideDropdownMenu}>
-									<li><Link to={{pathname: '/practiceAreas'}}>Practice Areas</Link></li>
-									<li><Link to={{pathname: '/serviceAreas'}}>Service Areas</Link></li>
+									<li><Link to={{pathname: '/practice-areas'}}>Practice Areas</Link></li>
+									<li><Link to={{pathname: '/service-areas'}}>Service Areas</Link></li>
 								</ul>
 							) : null}
 						</div>
 
-						<li><Link to={{pathname: '/'}}>Projects</Link></li>
+						{/*<li><Link to={{pathname: '/'}}>Projects</Link></li>*/}
 						<li onClick={ShowWarning}><Link to={{pathname: '/'}}>News</Link></li>
 						<li><Link to={{pathname: '/'}}>Media</Link></li>
 						<li><Link to={{pathname: '/'}}>Careers</Link></li>

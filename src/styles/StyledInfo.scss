@@ -1,0 +1,46 @@
+$blue: #00acee;
+
+.main-container {
+	background-color: #fff;
+	height: 100%;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	padding-left: 10rem;
+	padding-right: 10rem;
+
+
+	.heading-container {
+
+		.random-square {
+			width: 50px;
+			height: 8px;
+			background-color: $blue;
+		}
+
+		h1 {
+			text-align: left;
+			font-weight: 300;
+			font-size: 40px;
+		}
+	}
+
+	.body img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 15px;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	ul li::before {
+		color: $blue;
+		content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+		font-weight: bold; /* If you want it to be bold */
+		display: inline-block; /* Needed to add space between the bullet and the text */
+		width: 1em; /* Also needed for space (tweak if needed) */
+		margin-left: -1em; /* Also needed for space (tweak if needed) */
+		font-size: 1.5em;
+	}
+}
