@@ -15,7 +15,6 @@ export class Navbar extends React.Component {
 		this.setState({
 			displayMenu: true }, () => {document.addEventListener('click', this.hideDropdownMenu);
 		});
-		console.log("worked");
 	}
 
 	hideDropdownMenu = () => {
@@ -42,27 +41,28 @@ export class Navbar extends React.Component {
 				</div>
 
 
-				<div className="navbar-items">
+				<div className="navbar-items" onMouseLeave={this.hideDropdownMenu}>
 					<ul className="main-ul">
 						<div className="dropdown1">
 							<li onMouseOver={this.showDropdownMenu}>
 									Services
 							</li>
-
+							
 							{ this.state.displayMenu ? (
-								<ul className="dropdown-ul" onMouseLeave={this.hideDropdownMenu}>
+								<ul className="dropdown-ul1" onMouseLeave={this.hideDropdownMenu}>
 									<li><Link to={{pathname: '/practiceAreas'}}>Practice Areas</Link></li>
-									<li>Service Areas</li>
+									<li><Link to={{pathname: '/serviceAreas'}}>Service Areas</Link></li>
 								</ul>
 							) : null}
 						</div>
-
 
 						<li><Link to={{pathname: '/'}}>Projects</Link></li>
 						<li onClick={ShowWarning}><Link to={{pathname: '/'}}>News</Link></li>
 						<li><Link to={{pathname: '/'}}>Media</Link></li>
 						<li><Link to={{pathname: '/'}}>Careers</Link></li>
 						<li><Link to={{pathname: '/'}}>About</Link></li>
+
+
 					</ul>
 				</div>
 			</nav>

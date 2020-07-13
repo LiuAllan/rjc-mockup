@@ -1,15 +1,15 @@
 import React from 'react';
 import { Header } from '../components/Header';
-import PracticeAreaContent from '../components/PracticeAreaContent';
+import ServiceAreaContent from '../components/ServiceAreaContent';
 import Footer from '../components/Footer';
 
-export default class practiceAreas extends React.Component {
+export default class serviceAreas extends React.Component {
 	render()
 	{
 		return(
 			<>
 				<Header />
-				<PracticeAreaContent />
+				<ServiceAreaContent />
 				<Footer />
 			</>
 		);
