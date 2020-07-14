@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/StyledFooter.scss';
 import Grid from '@material-ui/core/Grid';
+import { Link } from 'react-router-dom';
 import IconButton from '@material-ui/core/IconButton';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -33,7 +34,9 @@ export default class Footer extends React.Component {
 
 					<div className="foot-links">
 						<ul>
-							<li>Careers</li>
+							<Link to={{ pathname: '/careers'}}>
+								<li>Careers</li>
+							</Link>
 							<li>Privacy Policy</li>
 							<li>Accessibility Policy</li>
 							<li>Site Map</li>

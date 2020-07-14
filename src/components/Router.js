@@ -11,6 +11,8 @@ import structuralRestoration from "../pages/structuralRestoration";
 import structuralGlassEngineering from "../pages/structuralGlassEngineering";
 import parkingFacilityDesign from "../pages/parkingFacilityDesign";
 import auditsStudies from '../pages/auditsStudies';
+import careers from '../pages/careers';
+import about from '../pages/about';
 
 const Router = () => (
 	<BrowserRouter>
@@ -30,6 +32,8 @@ const Router = () => (
 			)} />
 			
 			<Route path="/service-areas" component={serviceAreas} />
+			<Route path="/careers" component={careers} />
+			<Route path="/about" component={about} />
 		</Switch>
 	</BrowserRouter>
 );

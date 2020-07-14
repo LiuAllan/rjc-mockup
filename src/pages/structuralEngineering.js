@@ -40,9 +40,9 @@ export default class structuralEngineering extends React.Component {
 						<p>We collaborate with owner and consultant teams to develop structural solutions that integrate seamlessly into building form and function. Economy and effective use of materials, which are key to sustainability, are in our DNA. When structural elements are exposed and featured, we focus on developing attractive details the whole team can be proud of.</p>
 						<h3>Continually improving</h3>
 						<p>
-							We continually invest in our company to remain one of the top engineering firms in North America, seeking out and mentoring the next generation of Canada’s ‘best and brightest’ engineers. 
-We were early adopters of building information modelling (BIM), and our expertise with emerging visualization software enables clients to clearly see ideas we are proposing. 
-Projects are becoming more complex, and our practice has evolved to embrace and leverage technology. We are integrating analysis, design and drawing software to optimize results for our clients.
+							We continually invest in our company to remain one of the top engineering firms in North America, seeking out and mentoring the next generation of Canada’s ‘best and brightest’ engineers.<br /><br />
+							We were early adopters of building information modelling (BIM), and our expertise with emerging visualization software enables clients to clearly see ideas we are proposing.<br /><br />
+							Projects are becoming more complex, and our practice has evolved to embrace and leverage technology. We are integrating analysis, design and drawing software to optimize results for our clients.
 						</p>
 					</div>
 				</section>
