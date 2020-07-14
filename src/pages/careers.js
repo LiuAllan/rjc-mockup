@@ -4,7 +4,6 @@ import { Header } from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/StyledInfo.scss';
 import img from '../images/info/careers_new-overview.jpg';
-import { Link } from 'react-router-dom';
 
 export default class parkingFacilityDesign extends React.Component {
 

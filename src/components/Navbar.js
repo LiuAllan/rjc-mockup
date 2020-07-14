@@ -26,7 +26,9 @@ export class Navbar extends React.Component {
 	render() {
 		const ShowWarning = () => {
 			alert(`This is only a mockup. I don't have access to the backend so this page is not available :)`);
+			
 		}
+
 
 		return(
 			<nav className="navbar-navigation">
@@ -45,7 +47,7 @@ export class Navbar extends React.Component {
 					<ul className="main-ul">
 						<div className="dropdown1">
 							<li onMouseOver={this.showDropdownMenu}>
-									Services
+									<Link to={{pathname: '/practice-areas'}}>Services</Link>
 							</li>
 							
 							{ this.state.displayMenu ? (
@@ -58,10 +60,9 @@ export class Navbar extends React.Component {
 
 						{/*<li><Link to={{pathname: '/'}}>Projects</Link></li>*/}
 						<li onClick={ShowWarning}><Link to={{pathname: '/'}}>News</Link></li>
-						<li><Link to={{pathname: '/'}}>Media</Link></li>
+						<li><Link to={{pathname: '/media'}}>Media</Link></li>
 						<li><Link to={{pathname: '/careers'}}>Careers</Link></li>
 						<li><Link to={{pathname: '/about'}}>About</Link></li>
-
 
 					</ul>
 				</div>

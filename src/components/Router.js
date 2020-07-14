@@ -13,6 +13,8 @@ import parkingFacilityDesign from "../pages/parkingFacilityDesign";
 import auditsStudies from '../pages/auditsStudies';
 import careers from '../pages/careers';
 import about from '../pages/about';
+import aboutCompany from '../pages/aboutCompany';
+import media from '../pages/media';
 
 const Router = () => (
 	<BrowserRouter>
@@ -30,10 +32,16 @@ const Router = () => (
 					<Route exact path={`${url}/audits-studies`} component={auditsStudies} />
 				</>
 			)} />
-			
 			<Route path="/service-areas" component={serviceAreas} />
+			<Route path="/media" component={media} />
 			<Route path="/careers" component={careers} />
-			<Route path="/about" component={about} />
+
+			<Route path="/about" render={({ match: { url }}) => (
+				<>	
+					<Route exact path={`${url}`} component={about} />
+					<Route exact path={`${url}/company`} component={aboutCompany} />
+				</>
+			)}/>
 		</Switch>
 	</BrowserRouter>
 );

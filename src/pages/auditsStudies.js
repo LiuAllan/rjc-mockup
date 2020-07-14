@@ -45,6 +45,7 @@ export default class auditStudies extends React.Component {
 							<li>Life Cycle Costing Studies</li>
 							<li>Load Reviews</li>
 							<li>Maintenance and Renewals Planning</li>
+							
 							<li>Operational & Functional Screening</li>
 							<li>Parking Garage Review and Durability Consulting</li>
 							<li>Parking Planning</li>

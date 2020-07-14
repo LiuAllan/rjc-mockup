@@ -1,15 +1,15 @@
 import React from 'react';
 import { Header } from '../components/Header';
-import AboutContent from '../components/AboutContent';
+import MediaContent from '../components/MediaContent';
 import Footer from '../components/Footer';
 
-export default class about extends React.Component {
+export default class media extends React.Component {
 	render()
 	{
 		return(
 			<>
 				<Header />
-				<AboutContent />
+				<MediaContent />
 				<Footer />
 			</>
 		);

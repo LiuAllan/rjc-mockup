@@ -15,8 +15,8 @@ const sideDrawer = props => {
 				<li><Link to={{pathname: '/'}}>Projects</Link></li>
 				<li><Link to={{pathname: '/'}}>News</Link></li>
 				<li><Link to={{pathname: '/'}}>Media</Link></li>
-				<li><Link to={{pathname: '/'}}>Careers</Link></li>
-				<li><Link to={{pathname: '/'}}>About</Link></li>
+				<li><Link to={{pathname: '/careers'}}>Careers</Link></li>
+				<li><Link to={{pathname: '/about'}}>About</Link></li>
 			</ul>
 		</nav>
 	);

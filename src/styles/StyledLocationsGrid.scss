@@ -1,0 +1,14 @@
+.card {
+	line-height: 0.5;
+	padding: 1.5rem;
+}
+
+.city {
+	font-weight: 400;
+}
+
+@media screen and (max-width: 1050px) {
+	.locations-grid-container p {
+		font-size: 12px;
+	}
+}
