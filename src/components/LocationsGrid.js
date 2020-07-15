@@ -13,7 +13,7 @@ const LocationsGrid = () => (
 				justify="space-around"
 				alignItems="center"
 			>
-				<Grid item sm={5}>
+				<Grid item md={6}>
 					<Paper className='card' elevation={3}>
 					<p className="city">Vancouver</p>
 						<p>1285 West Broadway</p>
@@ -23,7 +23,7 @@ const LocationsGrid = () => (
 						<p>Fax: 604.738.1107</p>
 					</Paper>
 				</Grid>
-				<Grid item sm={7}>
+				<Grid item md={6}>
 					<Paper className='card' elevation={3}>
 						<p className="city">Surrey</p>
 						<p>1285 West Broadway</p>
@@ -33,7 +33,7 @@ const LocationsGrid = () => (
 						<p>Fax: 604.738.1107</p>
 					</Paper>
 				</Grid>
-				<Grid item md={5}>
+				<Grid item md={6}>
 					<Paper className='card' elevation={7}>
 						<p className="city">Victoria</p>
 						<p>1285 West Broadway</p>
@@ -43,7 +43,7 @@ const LocationsGrid = () => (
 						<p>Fax: 604.738.1107</p>
 					</Paper>
 				</Grid>
-				<Grid item md={7}>
+				<Grid item md={6}>
 					<Paper className='card' elevation={5}>
 						<p className="city">Nanaimo</p>
 						<p>1285 West Broadway</p>
@@ -53,7 +53,7 @@ const LocationsGrid = () => (
 						<p>Fax: 604.738.1107</p>
 					</Paper>
 				</Grid>
-				<Grid item md={5} sm={5}>
+				<Grid item md={6} sm={5}>
 					<Paper className='card' elevation={3}>
 						<p className="city">Kelowna</p>
 						<p>1285 West Broadway</p>
@@ -63,7 +63,7 @@ const LocationsGrid = () => (
 						<p>Fax: 604.738.1107</p>
 					</Paper>
 				</Grid>
-				<Grid item md={7} sm={7}>
+				<Grid item md={6} sm={7}>
 					<Paper className='card' elevation={3}>
 						<p className="city">Calgary</p>
 						<p>1285 West Broadway</p>
@@ -83,7 +83,7 @@ const LocationsGrid = () => (
 						<p>Fax: 604.738.1107</p>
 					</Paper>
 				</Grid>
-				<Grid item md={6} sm={6}>
+				<Grid item md={6} sm={7}>
 					<Paper className='card' elevation={3}>
 						<p className="city">Saskatoon</p>
 						<p>1285 West Broadway</p>

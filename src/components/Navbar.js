@@ -3,11 +3,13 @@ import '../styles/StyledNavbar.scss';
 import { Link } from 'react-router-dom';
 import logo from '../images/rjc-logo.png';
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton';
+import EzSnackbar from './Snackbar';
 
 export class Navbar extends React.Component {
 
 	state = {
 		displayMenu: false,
+		open: false,
 	}
 
 	showDropdownMenu = (event) => {
@@ -23,12 +25,19 @@ export class Navbar extends React.Component {
 		});
 	}
 
-	render() {
-		const ShowWarning = () => {
-			alert(`This is only a mockup. I don't have access to the backend so this page is not available :)`);
-			
-		}
+	handleClick = () => {
+    	this.setState({ open: true, });
+  	}
 
+  	handleClose = (event, reason) => {
+	    if (reason === 'clickaway') {
+	      return;
+	    }
+	    this.setState({ open: false, });
+  	}
+
+
+	render() {
 
 		return(
 			<nav className="navbar-navigation">
@@ -59,7 +68,10 @@ export class Navbar extends React.Component {
 						</div>
 
 						{/*<li><Link to={{pathname: '/'}}>Projects</Link></li>*/}
-						<li onClick={ShowWarning}><Link to={{pathname: '/'}}>News</Link></li>
+						<div>
+							<li onClick={this.handleClick}><Link>News</Link></li>
+							<EzSnackbar open={this.state} close={this.handleClose}/>
+						</div>
 						<li><Link to={{pathname: '/media'}}>Media</Link></li>
 						<li><Link to={{pathname: '/careers'}}>Careers</Link></li>
 						<li><Link to={{pathname: '/about'}}>About</Link></li>

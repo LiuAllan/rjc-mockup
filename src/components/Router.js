@@ -16,6 +16,7 @@ import about from '../pages/about';
 import aboutCompany from '../pages/aboutCompany';
 import media from '../pages/media';
 import brochures from '../pages/brochures';
+import videos from '../pages/videos';
 
 const Router = () => (
 	<BrowserRouter>
@@ -40,6 +41,7 @@ const Router = () => (
 				<>	
 					<Route exact path={`${url}`} component={media} />
 					<Route exact path={`${url}/brochures`} component={brochures} />
+					<Route exact path={`${url}/videos`} component={videos} />
 				</>
 			)}/>
 

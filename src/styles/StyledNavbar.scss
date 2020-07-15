@@ -23,12 +23,13 @@
 
 	.navbar-items .main-ul {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		grid-gap: 1rem;
 		list-style-type:none;
 		padding: 10px;
 		padding-top: 3rem;
 		margin-bottom: 5px;
+		text-align: center;
 
 		li {
 			font-size: 20px;
