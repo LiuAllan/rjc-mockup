@@ -15,6 +15,7 @@ import careers from '../pages/careers';
 import about from '../pages/about';
 import aboutCompany from '../pages/aboutCompany';
 import media from '../pages/media';
+import brochures from '../pages/brochures';
 
 const Router = () => (
 	<BrowserRouter>
@@ -33,9 +34,17 @@ const Router = () => (
 				</>
 			)} />
 			<Route path="/service-areas" component={serviceAreas} />
-			<Route path="/media" component={media} />
-			<Route path="/careers" component={careers} />
 
+
+			<Route path="/media" render={({ match: { url }}) => (
+				<>	
+					<Route exact path={`${url}`} component={media} />
+					<Route exact path={`${url}/brochures`} component={brochures} />
+				</>
+			)}/>
+
+
+			<Route path="/careers" component={careers} />
 			<Route path="/about" render={({ match: { url }}) => (
 				<>	
 					<Route exact path={`${url}`} component={about} />
