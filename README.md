@@ -7,7 +7,7 @@ Created with:
 - HTML5
 - CSS3
 - SASS/SCSS
-- Material UI
+- Material UI (Button, Breadcrumbs, Snackbar, Paper, Grid, Cards)
 - React Slick
 - ScrollOut
 - React Router
