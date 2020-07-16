@@ -26,8 +26,8 @@ const Breadcrumbs = (props) => {
         /*Make the last item in path a non-link*/
         const isLast = index === pathnames.length - 1;
 
-        return isLast ? (<Typography key={name}>{name.replace("-", " ")}</Typography>)
-          : <Link key={name} onClick={() => history.push(routeTo)}>{name.replace("-", " ")}</Link>;
+        return isLast ? (<Typography key={name}>{name.replace(/-/g, " ")}</Typography>)
+          : <Link key={name} onClick={() => history.push(routeTo)}>{name.replace(/-/g, " ")}</Link>;
       })}
     </MUIBreadcrumbs>
   );

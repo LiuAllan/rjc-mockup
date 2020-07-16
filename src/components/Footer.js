@@ -8,6 +8,18 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
 
 export default class Footer extends React.Component {
+	state = {
+		open: false,
+	}
+
+	handleClick = () => {
+    	this.setState({ open: true, });
+  	}
+
+  	handleClose = (event, reason) => {
+	    this.setState({ open: false, });
+  	}
+
 
 	render()
 	{
@@ -37,7 +49,11 @@ export default class Footer extends React.Component {
 							<Link to={{ pathname: '/careers'}}>
 								<li>Careers</li>
 							</Link>
-							<li>Privacy Policy</li>
+
+							<Link to={{ pathname: '/privacy-policy'}}>
+								<li>Privacy Policy</li>
+							</Link>
+
 							<a href='http://www.rjc.ca/docs/default-source/accessibility/rjc_accessible-customer-service-policyb8c2ac391b316d6b9fc9ff00001037d2.pdf?sfvrsn=2'>
 								<li>Accessibility Policy</li>
 							</a>

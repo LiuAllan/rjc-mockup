@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/StyledPracticeArea.scss';
 import Item from './Item';
+import { Link } from 'react-router-dom';
 
 import img1 from '../images/serviceAreas/img1.jpg';
 import img2 from '../images/serviceAreas/img2.jpg';
@@ -40,82 +41,134 @@ const ServiceAreaContent = () => (
 		<div className="item-list">
 			{/*Input square components*/}
 			<div className="grid-item">
-				<Item image={img1} text="Bridge Design & Rehabilitation"/>
+				<Link to={{ pathname: '/service-areas/bridge-design-rehabilitation'}}>
+					<Item image={img1} text="Bridge Design & Rehabilitation"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img2} text="Building Enclosures"/>
+				<Link to={{ pathname: '/service-areas/building-enclosures'}}>
+					<Item image={img2} text="Building Enclosures"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img3} text="Cold-Formed Steel Design"/>
+				<Link to={{ pathname: '/service-areas/steel-design'}}>
+					<Item image={img3} text="Cold-Formed Steel Design"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img4} text="Condition Assessments"/>
+				<Link to={{ pathname: '/service-areas/condition-assessments'}}>
+					<Item image={img4} text="Condition Assessments"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img5} text="Depreciation Reports & Reserve Fund Studies"/>
+				<Link to={{ pathname: '/service-areas/depreciation-reports'}}>
+					<Item image={img5} text="Depreciation Reports & Reserve Fund Studies"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img6} text="Facade Engineering"/>
+				<Link to={{pathname: '/service-areas/facade-engineering'}}>
+					<Item image={img6} text="Facade Engineering"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img7} text="Fall Protection & Travel Restraint"/>
+				<Link to={{pathname: '/service-areas/fall-protection'}}>
+					<Item image={img7} text="Fall Protection & Travel Restraint"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img8} text="Forensic Engineering"/>
+				<Link to={{pathname: '/service-areas/forensic-engineering'}}>
+					<Item image={img8} text="Forensic Engineering"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img9} text="Heritage Conservation"/>
+				<Link to={{pathname: '/service-areas/heritage-conservation'}}>
+					<Item image={img9} text="Heritage Conservation"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img10} text="Parking Facility Design"/>
+				<Link to={{pathname: '/service-areas/parking-facility-designs'}}>
+					<Item image={img10} text="Parking Facility Design"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img11} text="Parking Structure Restoration"/>
+				<Link to={{pathname: '/service-areas/parking-structure-restoration'}}>
+					<Item image={img11} text="Parking Structure Restoration"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img12} text="Pavement Rehabilitation"/>
+				<Link to={{pathname: '/service-areas/pavement-rehabilitation'}}>
+					<Item image={img12} text="Pavement Rehabilitation"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img13} text="Performance Assessment"/>
+				<Link to={{pathname: '/service-areas/performance-assessment'}}>
+					<Item image={img13} text="Performance Assessment"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img14} text="Post-Tensioned Concrete"/>
+				<Link to={{pathname: '/service-areas/post-tensioned-concrete'}}>
+					<Item image={img14} text="Post-Tensioned Concrete"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img15} text="Prime Consulting"/>
+				<Link to={{pathname: '/service-areas/prime-consulting'}}>
+					<Item image={img15} text="Prime Consulting"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img16} text="Rendering & Interactive Visualization"/>
+				<Link to={{pathname: '/service-areas/rendering-interactive-visualization'}}>
+					<Item image={img16} text="Rendering & Interactive Visualization"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img17} text="Roofs & Plaza Decks"/>
+				<Link to={{pathname: '/service-areas/roofs-plaza-decks'}}>
+					<Item image={img17} text="Roofs & Plaza Decks"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img18} text="Seismic Risk Mitigation"/>
+				<Link to={{pathname: '/service-areas/seismic-risk-mitigation'}}>
+					<Item image={img18} text="Seismic Risk Mitigation"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img19} text="Specialty & Supplementary Engineering"/>
+				<Link to={{pathname: '/service-areas/specialty-supplementary-engineering'}}>
+					<Item image={img19} text="Specialty & Supplementary Engineering"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img20} text="Structual Engineering"/>
+				<Link to={{pathname: '/service-areas/structural-engineering'}}>
+					<Item image={img20} text="Structual Engineering"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img21} text="Structual Glass Engineering"/>
+				<Link to={{pathname: '/service-areas/structural-glass-engineering'}}>
+					<Item image={img21} text="Structual Glass Engineering"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img22} text="Structural Restoration"/>
+				<Link to={{pathname: '/service-areas/structural-restoration'}}>
+					<Item image={img22} text="Structural Restoration"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img23} text="Sustainable Design"/>
+				<Link to={{pathname: '/service-areas/sustainable-design'}}>
+					<Item image={img23} text="Sustainable Design"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img24} text="Traffic Deck Protection & Replacement"/>
+				<Link to={{pathname: '/service-areas/traffic-deck-protection-replacement'}}>
+					<Item image={img24} text="Traffic Deck Protection & Replacement"/>
+				</Link>
 			</div>
 			<div className="grid-item">
-				<Item image={img25} text="Waterproofing"/>
+				<Link to={{pathname: '/service-areas/waterproofing'}}>
+					<Item image={img25} text="Waterproofing"/>
+				</Link>
 			</div>	
 			<div className="grid-item">
-				<Item image={img26} text="Wood Design"/>
+				<Link to={{pathname: '/service-areas/wood-design'}}>
+					<Item image={img26} text="Wood Design"/>
+				</Link>
 			</div>	
 		</div>
 	</section>

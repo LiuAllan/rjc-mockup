@@ -133,7 +133,7 @@ export default class MainContent extends React.Component {
 					<div className="content-block5-info-container">
 						<h3>Leaders in Sustainability</h3>
 						<p>RJC is committed to delivering creative, practical solutions benefitting our clients, while also minimizing the economic, social and environmental impacts of the built environment. To establish RJC as an industry leader in this vital area, we have formed RJC’s Sustainable Design Group, which expands our knowledge of sustainable design and helps foster innovation in sustainable design practices. RJC is on a journey toward greener operations and as we migrate to a reduced environmental footprint, our staff has collaborated to create our Green Operations Plan; we have also established GreenTeams within each of our offices to pursue ways to bring our Green Operations Plan vision to life.</p>
-						<Button component={ Link } to="/" variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
+						<Button component={ Link } to="/service-areas/sustainable-design" variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
 					</div>
 					
 				</section>
