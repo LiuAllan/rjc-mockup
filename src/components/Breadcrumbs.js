@@ -14,8 +14,8 @@ const Breadcrumbs = (props) => {
     <MUIBreadcrumbs aria-label="breadcrumb" separator="›">
       {/*Home will never change. Is hardcoded*/}
       {pathnames.length > 0 ? 
-        <Link onClick={() => history.push('/')}>Home</Link>
-        : <Typography>Home</Typography>
+        (<Link onClick={() => history.push('/')}>Home</Link>)
+        : (<Typography>Home</Typography>)
       }
 
       {/*For each item in the array of pathnames*/}

@@ -24,15 +24,12 @@
 	.navbar-items .main-ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 1rem;
 		list-style-type:none;
-		padding: 10px;
 		padding-top: 3rem;
-		margin-bottom: 5px;
 		text-align: center;
 
 		li {
-			font-size: 20px;
+			font-size: 22px;
 			font-weight: 350;
 		}
 
@@ -76,7 +73,7 @@
 	margin: 0;
 	padding: 0;
 	top: 100%;
-	left: 48%;
+	left: 52%;
 	width: 150px;
 	background-color: #fff;
 	position: absolute;

@@ -38,7 +38,9 @@ export default class Footer extends React.Component {
 								<li>Careers</li>
 							</Link>
 							<li>Privacy Policy</li>
-							<li>Accessibility Policy</li>
+							<a href='http://www.rjc.ca/docs/default-source/accessibility/rjc_accessible-customer-service-policyb8c2ac391b316d6b9fc9ff00001037d2.pdf?sfvrsn=2'>
+								<li>Accessibility Policy</li>
+							</a>
 							<li>Site Map</li>
 							<li>Webmail Log-in</li>
 						</ul>
