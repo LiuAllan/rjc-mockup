@@ -5,13 +5,31 @@ import Footer from '../components/Footer';
 import '../styles/StyledInfo.scss';
 import img from '../images/info/careers_new-overview.jpg';
 
-export default class parkingFacilityDesign extends React.Component {
+import SideDrawer from '../components/SideDrawer/SideDrawer';
+import Backdrop from '../components/Backdrop/Backdrop';
 
+export default class parkingFacilityDesign extends React.Component {
+	state = {
+		sideDrawerOpen: false,
+	};
+
+	drawerToggleClickHandler = () => {
+		this.setState((prevState) => {
+			return {sideDrawerOpen: !prevState.sideDrawerOpen};
+		});
+	};
+
+	backdropClickHandler = () => {
+		this.setState({sideDrawerOpen: false});
+	};
+	
 	render()
 	{
 		return(
 			<>
-				<Header />
+				<Header drawerToggleClickHandler={this.drawerToggleClickHandler} />
+				{ this.state.sideDrawerOpen ? <SideDrawer show={this.state.sideDrawerOpen}/> : null}
+				{ this.state.sideDrawerOpen ? <Backdrop click={this.backdropClickHandler}/> : null}		
 				<section className="main-container">
 					<div className="heading-container">
 						<div className="random-square"></div>

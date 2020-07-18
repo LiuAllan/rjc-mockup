@@ -21,7 +21,7 @@ class App extends React.Component {
 	backdropClickHandler = () => {
 		this.setState({sideDrawerOpen: false});
 	};
-
+ 
 	render()
 	{
 	  return (

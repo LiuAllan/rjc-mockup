@@ -11,10 +11,10 @@ const sideDrawer = props => {
 	return(
 		<nav className={drawerClasses}>
 			<ul>
-				<li><Link to={{pathname: '/practiceAreas'}}>Services</Link></li>
-				<li><Link to={{pathname: '/'}}>Projects</Link></li>
+				<li><Link to={{pathname: '/'}}>Home</Link></li>
+				<li><Link to={{pathname: '/practice-areas'}}>Services</Link></li>
 				<li><Link to={{pathname: '/'}}>News</Link></li>
-				<li><Link to={{pathname: '/'}}>Media</Link></li>
+				<li><Link to={{pathname: '/media'}}>Media</Link></li>
 				<li><Link to={{pathname: '/careers'}}>Careers</Link></li>
 				<li><Link to={{pathname: '/about'}}>About</Link></li>
 			</ul>

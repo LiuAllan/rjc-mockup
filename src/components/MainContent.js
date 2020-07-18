@@ -50,7 +50,7 @@ export default class MainContent extends React.Component {
 					<div className="content-block2-info-container">
 
 						<Grid container spacing={8}>
-							<Grid item xs={6}>
+							<Grid item md={6} xs={12}>
 								<h3>Leaders in Structural Engineering</h3>
 								<p>City skylines across Canada are dominated by buildings bearing RJC’s signature. We have pioneered innovations to make structures more economical and buildable, developing many approaches which are now industry standards. We relentlessly pursue engineering excellence and extraordinary service with the goal of making our clients successful. Our engineers bring their creativity and individual expertise backed by the resources and collective knowledge of a large, specialized firm to every project.</p>
 
@@ -59,7 +59,7 @@ export default class MainContent extends React.Component {
 								</Button>
 							</Grid>
 
-							<Grid item xs={6}>
+							<Grid item md={6} xs={12}>
 								<div className="img-stack">
 									<div className="top">
 										<img className="img1" src={img1} alt=""/>
@@ -76,19 +76,19 @@ export default class MainContent extends React.Component {
 				<section className="content-block3" data-scroll>
 					<div className="content-block3-info-container">
 						<Grid container space={8}>
-							<Grid item xs={12}>
+							<Grid item md={12} xs={12}>
 								<h3>Leaders in Building Science</h3>
 								<p>Our knowledge base has developed over decades of helping our clients address building enclosure issues. We have the engineering expertise needed to look at building envelopes from the earliest conceptual stages of design and to come up with practical details that perform. Our holistic approach means we understand how building envelopes function and how they integrate with other building components throughout their lifespan.</p>
 								<Button component={ Link } to="/practice-areas/building-science" variant="outlined" size="small" color="primary" style={style}>Learn More</Button>
 							</Grid>
 
-							<Grid item xs={6}>
+							<Grid item md={6} xs={12}>
 									<div className="img2-container">
 										<img src={img2} alt="" style={{'float':'left'}} />
 									</div>
 							</Grid>
 
-							<Grid item xs={6}>
+							<Grid item md={6} xs={12}>
 								<div className="img3-container">
 									<img src={img3} alt="" style={{'float':'right'}}/>
 								</div>
@@ -101,12 +101,12 @@ export default class MainContent extends React.Component {
 				<section className="content-block4" data-scroll>
 					<div className="content-block4-info-container">
 					<Grid container space={8}>
-						<Grid item xs={6}>
+						<Grid item md={6} xs={12}>
 							<img src={img4} alt="" />
 							
 						</Grid>
 
-						<Grid item xs={6}>
+						<Grid item md={6} xs={12}>
 							<h3>Leaders in Structural Restoration</h3>
 							<p>At RJC we understand how structures are built and function. We know how they deteriorate and fail, and how to most effectively maintain and repair them for lasting value. For decades, clients have trusted us to provide valuable advice and services on evaluating, maintaining and restoring their structures including heritage building restoration. Our engineering knowledge base equips our specialists with a high-level of reliable expertise.</p>
 							<Button component={ Link } to="/practice-areas/structural-restoration" variant="outlined" size="small" color="primary" style={style}>Learn More</Button>

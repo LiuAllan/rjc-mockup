@@ -3,6 +3,8 @@ import { Header } from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/StyledPracticeArea.scss';
 import Item from '../components/Item';
+import SideDrawer from '../components/SideDrawer/SideDrawer';
+import Backdrop from '../components/Backdrop/Backdrop';
 
 import img1 from '../images/brochures/services-guide_tile_gradien.jpg';
 import img2 from '../images/brochures/sustainability_tile_gradient9f12ac391b316d6b9fc9ff00001037d2.jpg';
@@ -13,11 +15,26 @@ import img6 from '../images/brochures/structural-glass_brochure-tile_gradient2b5
 import img7 from '../images/brochures/bridge-design-rehabilitation-tile.jpg'
 
 export default class brochures extends React.Component {
+	state = {
+		sideDrawerOpen: false,
+	};
+
+	drawerToggleClickHandler = () => {
+		this.setState((prevState) => {
+			return {sideDrawerOpen: !prevState.sideDrawerOpen};
+		});
+	};
+
+	backdropClickHandler = () => {
+		this.setState({sideDrawerOpen: false});
+	};
 	render()
 	{
 		return(
 			<>
-				<Header />
+				<Header drawerToggleClickHandler={this.drawerToggleClickHandler}/>
+		      	{ this.state.sideDrawerOpen ? <SideDrawer show={this.state.sideDrawerOpen}/> : null}
+				{ this.state.sideDrawerOpen ? <Backdrop click={this.backdropClickHandler}/> : null}					
 					<section className="main-container">
 						<div className="heading-container">
 							<div className="random-square"></div>

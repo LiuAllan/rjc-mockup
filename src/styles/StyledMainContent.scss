@@ -116,3 +116,31 @@ $shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   opacity: 0;
   transform: translateY(200px)
 }
+
+@media only screen and (max-width: 768px)
+{
+	.main-content-container {
+		overflow: hidden;
+
+
+		.content-block1 * {
+			padding: 5px;
+		}
+
+		.content-block2 * {
+			padding: 5px;
+		}
+
+		.content-block3 * {
+			padding: 5px;
+		}
+		.content-block4 * {
+			padding: 5px;
+		}
+		.content-block5 * {
+			padding: 5px;
+		}
+
+
+	}
+}

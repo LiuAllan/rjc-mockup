@@ -27,7 +27,7 @@ export default class VideoContent extends React.Component {
 
 				<div className="video-items-list">
 					<Grid container spacing={1}>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_1}
 								link='https://player.vimeo.com/video/393713207?autoplay=1'
@@ -35,7 +35,7 @@ export default class VideoContent extends React.Component {
 								description='Structural and BIM conference. Toronto, ON'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_2}
 								link='https://player.vimeo.com/video/344177378?autoplay=1'
@@ -43,7 +43,7 @@ export default class VideoContent extends React.Component {
 								description='RJC celebrates women in Engineering 2019.'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_3}
 								link='https://player.vimeo.com/video/276351117?autoplay=1'
@@ -51,7 +51,7 @@ export default class VideoContent extends React.Component {
 								description='RJC celebrates women in Engineering 2018.'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_4}
 								link='https://player.vimeo.com/video/270392444?autoplay=1'
@@ -59,7 +59,7 @@ export default class VideoContent extends React.Component {
 								description='National Conference 2018. Calgary, AB'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_5}
 								link='https://player.vimeo.com/video/255986370?autoplay=1'
@@ -67,7 +67,7 @@ export default class VideoContent extends React.Component {
 								description='The Schulich School of Engineering built by RJC 2017. Calgary, AB'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_6}
 								link='https://player.vimeo.com/video/255987366?autoplay=1'
@@ -75,7 +75,7 @@ export default class VideoContent extends React.Component {
 								description='The Emerald Hills buidling. Sherwood Park, AB'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_7}
 								link='https://player.vimeo.com/video/271495871?autoplay=1'
@@ -83,7 +83,7 @@ export default class VideoContent extends React.Component {
 								description='Home of the National Music Centre. Calgary, AB'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_8}
 								link='https://player.vimeo.com/video/255988785?autoplay=1'
@@ -91,7 +91,7 @@ export default class VideoContent extends React.Component {
 								description='Timelapse of the Humer College Construction. Toronto, ON'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_9}
 								link='https://player.vimeo.com/video/247391653?autoplay=1'
@@ -99,7 +99,7 @@ export default class VideoContent extends React.Component {
 								description='Interviews at the 2017 ACMO Condo Conference. Toronto, ON'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_10}
 								link='https://player.vimeo.com/video/255990462?autoplay=1'
@@ -107,7 +107,7 @@ export default class VideoContent extends React.Component {
 								description='Pedestrian Bridge for Waterpark Place. Toronto, ON'
 							/>
 						</Grid>
-						<Grid item md={4}>
+						<Grid item md={4} xs={6}>
 							<VideoCard 
 								thumbnail={thumbnail_11}
 								link='https://player.vimeo.com/video/255988271?autoplay=1'

@@ -10,13 +10,30 @@ import img2 from '../images/aboutContent/about-info-img2.jpg'
 import img3 from '../images/aboutContent/about-info-img3.jpg'
 import EmailIcon from '@material-ui/icons/Email';
 
-class aboutCompany extends React.Component {
+import SideDrawer from '../components/SideDrawer/SideDrawer';
+import Backdrop from '../components/Backdrop/Backdrop';
 
+class aboutCompany extends React.Component {
+	state = {
+		sideDrawerOpen: false,
+	};
+
+	drawerToggleClickHandler = () => {
+		this.setState((prevState) => {
+			return {sideDrawerOpen: !prevState.sideDrawerOpen};
+		});
+	};
+
+	backdropClickHandler = () => {
+		this.setState({sideDrawerOpen: false});
+	};
 	render()
 	{
 		return(
 			<>
-				<Header />
+				<Header drawerToggleClickHandler={this.drawerToggleClickHandler} />
+				{ this.state.sideDrawerOpen ? <SideDrawer show={this.state.sideDrawerOpen}/> : null}
+				{ this.state.sideDrawerOpen ? <Backdrop click={this.backdropClickHandler}/> : null}	
 				<section className="main-container">
 					<LazyLoad once offset={100}>
 						<div className="heading-container">
