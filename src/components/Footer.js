@@ -31,14 +31,14 @@ export default class Footer extends React.Component {
 					</div>
 
 					<div className="socials">
-					<IconButton aria-label="Twitter.com" onClick={() => window.open('https://twitter.com/RJC_Engineers')}>
+					<IconButton aria-label="Twitter" onClick={() => window.open('https://twitter.com/RJC_Engineers')}>
 						<TwitterIcon style={{ 'color': '#00acee'}} fontSize='large' />
 					</IconButton>
 
-					<IconButton aria-label="Twitter.com" onClick={() => window.open('https://www.linkedin.com/company/read-jones-christoffersen-ltd-/')}>
+					<IconButton aria-label="LinkedIn" onClick={() => window.open('https://www.linkedin.com/company/read-jones-christoffersen-ltd-/')}>
 						<LinkedInIcon style={{ 'color': '#00acee'}} fontSize='large' />
 					</IconButton>
-					<IconButton aria-label="Twitter.com" onClick={() => window.open('https://www.facebook.com/Read-Jones-Christoffersen-Ltd-166038496790920/')}>
+					<IconButton aria-label="Facebook" onClick={() => window.open('https://www.facebook.com/Read-Jones-Christoffersen-Ltd-166038496790920/')}>
 						<FacebookIcon style={{ 'color': '#00acee'}} fontSize='large' />
 					</IconButton>
 

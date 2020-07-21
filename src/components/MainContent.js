@@ -4,7 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import ScrollOut from 'scroll-out';
 import { Link } from 'react-router-dom';
-// import 'animate.css';
 
 import img1 from '../images/main/tor_102910_n10_medium.jpg';
 import img2 from '../images/main/edm_031733_n309_medium-(1).jpg';
@@ -17,7 +16,7 @@ const style = {
 	color: '#00acee',
 }
 
-
+ 
 export default class MainContent extends React.Component {
 	componentDidMount() {
 		ScrollOut({

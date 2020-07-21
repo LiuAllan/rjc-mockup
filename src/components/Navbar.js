@@ -35,7 +35,7 @@ export class Navbar extends React.Component {
 	    }
 	    this.setState({ open: false, });
   	}
-
+ 
 
 	render() {
 
