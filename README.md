@@ -1,4 +1,4 @@
-# Project is work in progress
+# RJC Engineers UI/UX mock-up
 
 I have no affiliation with the official website or creator. This is purely for learning purposes and for fun.
 
